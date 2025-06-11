@@ -1,54 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Community Bake Sale</title>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Haven</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 <body>
+  <header>
+    <div class="container">
+      <h1>📚 Book Haven</h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Categories</a>
+        <a href="#">Best Sellers</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+  </header>
 
+  <section class="hero">
+    <div class="container">
+      <h2>Discover Your Next Favorite Book</h2>
+      <p>Explore thousands of titles from all genres</p>
+      <a href="#" class="btn">Browse Now</a>
+    </div>
+  </section>
 
-<header>
-    <h1 style="background-color:violet;">Welcome to Kago's Bake Sale!!<3</h1>
-</header>
+  <section class="featured-books">
+    <div class="container">
+      <h3>Featured Books</h3>
+      <div class="book-grid">
+        <div class="book">
+          <img src="https://via.placeholder.com/150x220" alt="Book Cover" />
+          <h4>The Great Read</h4>
+          <p>by John Smith</p>
+        </div>
+        <div class="book">
+          <img src="https://via.placeholder.com/150x220" alt="Book Cover" />
+          <h4>Adventure Awaits</h4>
+          <p>by Jane Doe</p>
+        </div>
+        <div class="book">
+          <img src="https://via.placeholder.com/150x220" alt="Book Cover" />
+          <h4>Mystery of the Night</h4>
+          <p>by Clara Miles</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<main>
-    <p>Join us for a day of delicious treats and community fun,come satisfy your sweet tooth and feed your cravings</p>
-
-    </p>Be sweet and buy some cupcakes!!<p/>
-    </p>This year the baking masterminds of Kago's Bake Sale are working hard to satisfy your cravings. Paay us a visit and satisfy your sweet tooth.<p/>
-    <img src="https://www.sugarandsoul.co/wp-content/uploads/2019/01/best-chocolate-cupcakes-recipe-7.jpg"alt="Cupcakes"width="150">
-    <h2>What's on Sale</h2>
-    <ul>
-        <li>Cookies</li>
-        <li>Cupcakes</li>
-        <li>Brownies</li>
-        <li>Geo hearts</li>
-        <li>Cakesicles</li>
-        <li>Cake slices</li>
-    </ul>
-    
-    <h2>Show love and satisfy your sweet tooth</h2>
-    <p>Your support helps and feedback will help us improve our treats to meet our customers needs.Come and make a difference!</p>
-
-    <p>Here's a picture of some tasty treats:</p>
-    <img src="https://bonnibakery.com/wp-content/uploads/2022/02/Valentines-Cakesicles-16.jpg.webp"alt="Delicious baked goods" width="200">
-    <img src="https://sincerelydivine.com/cdn/shop/products/WatermarkedPhoto_110x110@2x.jpg?v=1614725271"alt="Geo hearts" width="400"
-  <nav>
-  <a href="shop.html">Shop</a>
-  <a href="contact.html">Contact</a>
-  <a href="about.html">About</a>
-   <a href="index.html">Home</a> 
-</nav>      
-        
-    
-</main>
-
-<footer>
-    <p>&copy; 2025 Community Bake Sale</p>
-</footer>
-
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Book Haven. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
+✅ style.css
+css
+Copy
+Edit
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
 
+body {
+  line-height: 1.6;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+header {
+  background-color: #4a90e2;
+  color: #fff;
+  padding: 20px 0;
+}
+
+header h1 {
+  margin: 0;
+  display: inline-block;
+}
+
+nav {
+  float: right;
+}
+
+nav a {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.hero {
+  background: url('https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=1500&q=80') no-repeat center center/cover;
+  color: #fff;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.hero .btn {
+  display: inline-block;
+  margin-top: 20px;
+  background: #fff;
+  color: #4a90e2;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.featured-books {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.featured-books h3 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.book-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.book {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  width: 180px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.book img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
